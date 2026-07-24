@@ -1,19 +1,19 @@
 import Image from "next/image";
 
-export function HeroPortrait() {
+export function MilkFrogPortrait() {
   return (
     <div className="heroArtwork">
       <div className="heroVisual">
         <Image
           className="heroAvatar"
-          src="/images/rikka-avatar.webp"
-          alt="小鸟游六花头像"
+          src="/images/milk-frog/hero-leaf.webp"
+          alt="雨中拿着荷叶的奶蛙"
           fill
           priority
           sizes="(max-width: 900px) min(520px, 100vw), 390px"
         />
       </div>
-      <p className="avatarCaption">これは小鳥遊六花です。</p>
+      <p className="avatarCaption">这是奶蛙，本站的黄色吉祥物。</p>
     </div>
   );
 }

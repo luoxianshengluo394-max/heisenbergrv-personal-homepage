@@ -17,13 +17,13 @@ pnpm dev
 
 ```text
 app/                    Next.js 页面入口、全局样式与元数据
-components/home/        首页可复用组件
+components/home/        首页头像、奶蛙图片墙与项目卡片组件
 data/projects.ts        项目列表、介绍、标签与链接
 public/images/          网页图片资源
 ```
 
 日后修改项目内容时，主要编辑 `data/projects.ts`；修改头像时，替换
-`public/images/rikka-avatar.webp`；修改首页文字时，编辑 `app/page.tsx`。
+`public/images/milk-frog/hero-leaf.webp`；修改首页文字时，编辑 `app/page.tsx`。
 
 ## 构建
 

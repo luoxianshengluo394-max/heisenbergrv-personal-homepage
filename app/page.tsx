@@ -1,4 +1,5 @@
-import { HeroPortrait } from "@/components/home/HeroPortrait";
+import { MilkFrogGallery } from "@/components/home/MilkFrogGallery";
+import { MilkFrogPortrait } from "@/components/home/MilkFrogPortrait";
 import { ProjectCard } from "@/components/home/ProjectCard";
 import { projects } from "@/data/projects";
 
@@ -11,6 +12,7 @@ export default function Home() {
         </a>
         <div className="navLinks">
           <a href="#about">关于</a>
+          <a href="#milk-frog">奶蛙</a>
           <a href="#projects">项目</a>
           <a href="#contact">联系</a>
         </div>
@@ -46,7 +48,7 @@ export default function Home() {
           </div>
         </div>
 
-        <HeroPortrait />
+        <MilkFrogPortrait />
       </section>
 
       <section className="about shell" id="about">
@@ -72,10 +74,24 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="frogSection shell" id="milk-frog">
+        <div className="frogIntro">
+          <div>
+            <p className="sectionLabel">02 / 奶蛙</p>
+            <h2>这是奶蛙。</h2>
+          </div>
+          <p>
+            一只黄色、圆滚滚、表情有点迟钝的小蛙。它现在是这个主页的视觉吉祥物，
+            负责在嵌入式、控制与硬件项目之间提供一点轻松的黄色。
+          </p>
+        </div>
+        <MilkFrogGallery />
+      </section>
+
       <section className="projects shell" id="projects">
         <div className="sectionHeading">
           <div>
-            <p className="sectionLabel">02 / 开源项目</p>
+            <p className="sectionLabel">03 / 开源项目</p>
             <h2>Selected work</h2>
           </div>
         </div>
@@ -88,7 +104,7 @@ export default function Home() {
       </section>
 
       <section className="contact shell" id="contact">
-        <p className="sectionLabel">03 / 联系</p>
+        <p className="sectionLabel">04 / 联系</p>
         <div className="contactRow">
           <h2>
             一起交流，
