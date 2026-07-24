@@ -419,6 +419,25 @@ a {
   transform: rotate(-7deg) scale(1.04);
 }
 
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.emailLink {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  font: 550 13px/1.4 "Cascadia Code", "SFMono-Regular", monospace;
+  overflow-wrap: anywhere;
+  transition: opacity 180ms ease;
+}
+
+.emailLink:hover {
+  opacity: 0.6;
+}
+
 .footer {
   height: 92px;
   display: flex;
@@ -510,6 +529,10 @@ a {
   .contactRow {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .contactLinks {
+    align-items: flex-start;
   }
 
   .roundLink {

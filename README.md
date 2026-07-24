@@ -1,6 +1,6 @@
 # heisenbergrv.com
 
-罗罗先生的个人主页，展示嵌入式系统、边缘 AI、MCU 固件、电力电子与硬件项目。
+luoxiansheng 的个人主页，展示 Embedded Systems、Edge AI、MCU Firmware、Power Electronics 与 Hardware Systems 项目。
 
 ## 本地预览
 
@@ -36,3 +36,4 @@ pnpm build
 
 - Website: <https://heisenbergrv.com>
 - GitHub: <https://github.com/luoxianshengluo394-max>
+- Email: <luoxianshengluo394@gmail.com>

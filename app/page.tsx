@@ -4,8 +4,8 @@ const projects = [
     title: "DC Constant-Current Supply",
     subtitle: "2026 SEU Electronic Design Contest",
     description:
-      "基于 STM32G474 的可编程直流恒流电源，包含完整固件、硬件资料与工程文档。",
-    tags: ["STM32G474", "Power Electronics", "C"],
+      "基于 STM32G474 的可编程 DC Constant-Current Supply，包含完整 Firmware、Hardware Documentation 与 Engineering Notes。",
+    tags: ["STM32", "Power Electronics", "Firmware"],
     href: "https://github.com/luoxianshengluo394-max/seu-2026-dc-constant-current-supply",
   },
   {
@@ -13,8 +13,8 @@ const projects = [
     title: "AC Power Supply",
     subtitle: "Electronics Contest Training I",
     description:
-      "交流电源训练工程，涵盖 STM32G474 控制固件、STM32H723 显示端与台架记录。",
-    tags: ["STM32", "AC Supply", "Firmware"],
+      "AC Power Supply 训练工程，涵盖 STM32G474 Control Firmware、STM32H723 Display Firmware 与 Bench Records。",
+    tags: ["STM32", "Power Electronics", "Firmware"],
     href: "https://github.com/luoxianshengluo394-max/seu-2026-training-1-ac-power-supply",
   },
   {
@@ -22,8 +22,8 @@ const projects = [
     title: "Energy Feedback Converter",
     subtitle: "Electronics Contest Training II",
     description:
-      "三相逆变与能量回馈实验平台，包含有源整流相关控制固件和实验资料。",
-    tags: ["Three-phase", "Converter", "Control"],
+      "Three-Phase Inverter 与 Energy Feedback 实验平台，包含 Active Rectifier Control Firmware 和实验资料。",
+    tags: ["STM32", "Power Electronics", "Firmware"],
     href: "https://github.com/luoxianshengluo394-max/seu-2026-training-2-energy-feedback-converter",
   },
   {
@@ -31,8 +31,8 @@ const projects = [
     title: "Single-Phase APF",
     subtitle: "Electronics Contest Training III",
     description:
-      "单相有源电力滤波器，包含谐波分析、闭环补偿、CAN 遥测和显示端固件。",
-    tags: ["APF", "Harmonics", "CAN"],
+      "Single-Phase Active Power Filter，包含 Harmonic Analysis、Closed-Loop Compensation、CAN Telemetry 和 Display Firmware。",
+    tags: ["STM32", "Power Electronics", "Firmware"],
     href: "https://github.com/luoxianshengluo394-max/seu-2026-training-3-single-phase-apf",
   },
   {
@@ -40,8 +40,8 @@ const projects = [
     title: "Wearable Fall Detection",
     subtitle: "AI for Social Good Challenge 2026 · Champion",
     description:
-      "融合 nRF52840 Sense、TinyML、BLE、Python 仪表盘与可打印外壳的穿戴式跌倒检测系统。",
-    tags: ["Edge AI", "TinyML", "BLE"],
+      "融合 nRF52840 Sense、TinyML、BLE、Python Dashboard 与 3D-Printable Enclosure 的 Wearable Fall Detection System。",
+    tags: ["nRF52", "Edge AI", "Firmware"],
     href: "https://github.com/luoxianshengluo394-max/ai-for-social-good-2026-fall-detection",
     featured: true,
   },
@@ -52,7 +52,7 @@ export default function Home() {
     <main>
       <nav className="nav shell" aria-label="主导航">
         <a className="brand" href="#top" aria-label="回到首页">
-          LL<span>.</span>
+          LX<span>.</span>
         </a>
         <div className="navLinks">
           <a href="#about">关于</a>
@@ -70,11 +70,11 @@ export default function Home() {
           <h1>
             你好，我是
             <br />
-            <span>罗罗先生。</span>
+            <span>luoxiansheng。</span>
           </h1>
           <p className="heroLead">
-            一名正在持续学习的嵌入式开发者，关注边缘 AI、MCU
-            固件、电力电子与硬件系统。
+            入门级嵌入式开发者，关注 Edge AI、MCU Firmware、Power
+            Electronics 与 Hardware Systems。
           </p>
           <div className="heroActions">
             <a className="primaryButton" href="#projects">
@@ -96,7 +96,7 @@ export default function Home() {
           <div className="signal signalTwo" />
           <div className="signal signalThree" />
           <div className="chip">
-            <span className="chipLabel">LL</span>
+            <span className="chipLabel">LX</span>
             <span className="chipMeta">G474 · nRF52</span>
           </div>
         </div>
@@ -105,22 +105,22 @@ export default function Home() {
       <section className="about shell" id="about">
         <div>
           <p className="sectionLabel">01 / 关于我</p>
-          <h2>从电路到代码，<br />把想法做成能运行的系统。</h2>
+          <h2>嵌入式系统与<br />Edge AI。</h2>
         </div>
         <div className="aboutCopy">
           <p>
-            我喜欢在硬件与软件的交界处解决问题：阅读传感器数据、设计控制逻辑、
-            调通通信链路，再把每一部分整合成可验证的完整工程。
+            主要处理 Sensor Data Acquisition、Control Logic、Communication
+            Links 与 Hardware-Software Integration。
           </p>
           <p>
-            目前主要探索 STM32、实时控制、电力电子、TinyML 与可穿戴边缘设备，
-            并把比赛和训练中的实践项目整理为公开仓库。
+            目前学习和使用 STM32、Real-Time Control、Power Electronics、TinyML
+            与 Wearable Edge Devices。相关项目整理后公开于 GitHub。
           </p>
           <div className="focusList">
             <span>MCU Firmware</span>
             <span>Edge AI</span>
             <span>Power Electronics</span>
-            <span>Hardware</span>
+            <span>Hardware Systems</span>
           </div>
         </div>
       </section>
@@ -131,7 +131,6 @@ export default function Home() {
             <p className="sectionLabel">02 / 开源项目</p>
             <h2>Selected work</h2>
           </div>
-          <p>比赛、训练与工程实践</p>
         </div>
 
         <div className="projectGrid">
@@ -169,20 +168,29 @@ export default function Home() {
             <br />
             一起做点有意思的东西。
           </h2>
-          <a
-            className="roundLink"
-            href="https://github.com/luoxianshengluo394-max"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="访问罗罗先生的 GitHub"
-          >
-            GitHub ↗
-          </a>
+          <div className="contactLinks">
+            <a
+              className="roundLink"
+              href="https://github.com/luoxianshengluo394-max"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="访问 luoxiansheng 的 GitHub"
+            >
+              GitHub ↗
+            </a>
+            <a
+              className="emailLink"
+              href="mailto:luoxianshengluo394@gmail.com"
+              aria-label="发送邮件给 luoxiansheng"
+            >
+              luoxianshengluo394@gmail.com ↗
+            </a>
+          </div>
         </div>
       </section>
 
       <footer className="footer shell">
-        <span>© 2026 罗罗先生</span>
+        <span>© 2026 luoxiansheng</span>
         <span>heisenbergrv.com</span>
         <a href="#top">回到顶部 ↑</a>
       </footer>
