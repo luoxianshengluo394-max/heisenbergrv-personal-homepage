@@ -80,10 +80,7 @@ export default function Home() {
             <p className="sectionLabel">02 / 奶蛙</p>
             <h2>这是奶蛙。</h2>
           </div>
-          <p>
-            一只黄色、圆滚滚、表情有点迟钝的小蛙。它现在是这个主页的视觉吉祥物，
-            负责在嵌入式、控制与硬件项目之间提供一点轻松的黄色。
-          </p>
+          <p>わりとかわいい。</p>
         </div>
         <MilkFrogGallery />
       </section>
