@@ -16,7 +16,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <span>{project.index}</span>
         <span aria-hidden="true">↗</span>
       </div>
-      {project.featured && <span className="award">CHAMPION · HKD 8,000</span>}
+      {project.featured && <span className="award">CHAMPION HKD 8000</span>}
       <p className="projectSubtitle">{project.subtitle}</p>
       <h3>{project.title}</h3>
       <p className="projectDescription">{project.description}</p>

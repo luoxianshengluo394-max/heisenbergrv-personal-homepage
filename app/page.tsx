@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <nav className="nav shell" aria-label="主导航">
         <a className="brand" href="#top" aria-label="回到首页">
-          LX<span>.</span>
+          LX
         </a>
         <div className="navLinks">
           <a href="#about">关于</a>
@@ -22,16 +22,16 @@ export default function Home() {
         <div className="heroCopy">
           <p className="eyebrow">
             <span className="statusDot" aria-hidden="true" />
-            EMBEDDED SYSTEMS · EDGE AI
+            EMBEDDED SYSTEMS&nbsp;&nbsp;EDGE AI
           </p>
           <h1>
-            你好，我是
+            你好 我是
             <br />
-            <span>luoxiansheng。</span>
+            <span>luoxiansheng</span>
           </h1>
           <p className="heroLead">
-            入门级嵌入式开发者，关注 Edge AI、MCU Firmware、Power
-            Electronics 与 Hardware Systems。
+            入门级嵌入式开发者 关注 Edge AI MCU Firmware Power
+            Electronics 与 Hardware Systems
           </p>
           <div className="heroActions">
             <a className="primaryButton" href="#projects">
@@ -53,17 +53,17 @@ export default function Home() {
 
       <section className="about shell" id="about">
         <div>
-          <p className="sectionLabel">01 / 关于我</p>
-          <h2>嵌入式系统与<br />Edge AI。</h2>
+          <p className="sectionLabel">01 关于我</p>
+          <h2>嵌入式系统与<br />Edge AI</h2>
         </div>
         <div className="aboutCopy">
           <p>
-            主要处理 Sensor Data Acquisition、Control Logic、Communication
-            Links 与 Hardware-Software Integration。
+            主要处理 Sensor Data Acquisition Control Logic Communication
+            Links 与 Hardware-Software Integration
           </p>
           <p>
-            目前学习和使用 STM32、Real-Time Control、Power Electronics、TinyML
-            与 Wearable Edge Devices。相关项目整理后公开于 GitHub。
+            目前学习和使用 STM32 Real-Time Control Power Electronics TinyML
+            与 Wearable Edge Devices 相关项目整理后公开于 GitHub
           </p>
           <div className="focusList">
             <span>MCU Firmware</span>
@@ -77,10 +77,10 @@ export default function Home() {
       <section className="frogSection shell" id="milk-frog">
         <div className="frogIntro">
           <div>
-            <p className="sectionLabel">02 / 奶蛙</p>
-            <h2>这是奶蛙。</h2>
+            <p className="sectionLabel">02 奶蛙</p>
+            <h2>这是奶蛙</h2>
           </div>
-          <p>わりとかわいい。</p>
+          <p>わりとかわいい</p>
         </div>
         <MilkFrogGallery />
       </section>
@@ -88,7 +88,7 @@ export default function Home() {
       <section className="projects shell" id="projects">
         <div className="sectionHeading">
           <div>
-            <p className="sectionLabel">03 / 开源项目</p>
+            <p className="sectionLabel">03 开源项目</p>
             <h2>Selected work</h2>
           </div>
         </div>
@@ -101,12 +101,12 @@ export default function Home() {
       </section>
 
       <section className="contact shell" id="contact">
-        <p className="sectionLabel">04 / 联系</p>
+        <p className="sectionLabel">04 联系</p>
         <div className="contactRow">
           <h2>
-            一起交流，
+            一起交流
             <br />
-            一起做点有意思的东西。
+            一起做点有意思的东西
           </h2>
           <div className="contactLinks">
             <a
@@ -130,7 +130,7 @@ export default function Home() {
       </section>
 
       <footer className="footer shell">
-        <span>© 2026 luoxiansheng</span>
+        <span>2026 luoxiansheng</span>
         <span>heisenbergrv.com</span>
         <a href="#top">回到顶部 ↑</a>
       </footer>
