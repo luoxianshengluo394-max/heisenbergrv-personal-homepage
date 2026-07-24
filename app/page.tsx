@@ -1,51 +1,6 @@
-const projects = [
-  {
-    index: "01",
-    title: "DC Constant-Current Supply",
-    subtitle: "2026 SEU Electronic Design Contest",
-    description:
-      "基于 STM32G474 的可编程 DC Constant-Current Supply，包含完整 Firmware、Hardware Documentation 与 Engineering Notes。",
-    tags: ["STM32", "Power Electronics", "Firmware"],
-    href: "https://github.com/luoxianshengluo394-max/seu-2026-dc-constant-current-supply",
-  },
-  {
-    index: "02",
-    title: "AC Power Supply",
-    subtitle: "Electronics Contest Training I",
-    description:
-      "AC Power Supply 训练工程，涵盖 STM32G474 Control Firmware、STM32H723 Display Firmware 与 Bench Records。",
-    tags: ["STM32", "Power Electronics", "Firmware"],
-    href: "https://github.com/luoxianshengluo394-max/seu-2026-training-1-ac-power-supply",
-  },
-  {
-    index: "03",
-    title: "Energy Feedback Converter",
-    subtitle: "Electronics Contest Training II",
-    description:
-      "Three-Phase Inverter 与 Energy Feedback 实验平台，包含 Active Rectifier Control Firmware 和实验资料。",
-    tags: ["STM32", "Power Electronics", "Firmware"],
-    href: "https://github.com/luoxianshengluo394-max/seu-2026-training-2-energy-feedback-converter",
-  },
-  {
-    index: "04",
-    title: "Single-Phase APF",
-    subtitle: "Electronics Contest Training III",
-    description:
-      "Single-Phase Active Power Filter，包含 Harmonic Analysis、Closed-Loop Compensation、CAN Telemetry 和 Display Firmware。",
-    tags: ["STM32", "Power Electronics", "Firmware"],
-    href: "https://github.com/luoxianshengluo394-max/seu-2026-training-3-single-phase-apf",
-  },
-  {
-    index: "05",
-    title: "Wearable Fall Detection",
-    subtitle: "AI for Social Good Challenge 2026 · Champion",
-    description:
-      "融合 nRF52840 Sense、TinyML、BLE、Python Dashboard 与 3D-Printable Enclosure 的 Wearable Fall Detection System。",
-    tags: ["nRF52", "Edge AI", "Firmware"],
-    href: "https://github.com/luoxianshengluo394-max/ai-for-social-good-2026-fall-detection",
-    featured: true,
-  },
-];
+import { HeroPortrait } from "@/components/home/HeroPortrait";
+import { ProjectCard } from "@/components/home/ProjectCard";
+import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -91,15 +46,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="heroVisual" aria-hidden="true">
-          <div className="signal signalOne" />
-          <div className="signal signalTwo" />
-          <div className="signal signalThree" />
-          <div className="chip">
-            <span className="chipLabel">LX</span>
-            <span className="chipMeta">G474 · nRF52</span>
-          </div>
-        </div>
+        <HeroPortrait />
       </section>
 
       <section className="about shell" id="about">
@@ -135,27 +82,7 @@ export default function Home() {
 
         <div className="projectGrid">
           {projects.map((project) => (
-            <a
-              className={`projectCard${project.featured ? " featured" : ""}`}
-              href={project.href}
-              target="_blank"
-              rel="noreferrer"
-              key={project.title}
-            >
-              <div className="cardTop">
-                <span>{project.index}</span>
-                <span aria-hidden="true">↗</span>
-              </div>
-              {project.featured && <span className="award">CHAMPION · HKD 8,000</span>}
-              <p className="projectSubtitle">{project.subtitle}</p>
-              <h3>{project.title}</h3>
-              <p className="projectDescription">{project.description}</p>
-              <div className="tags">
-                {project.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-              </div>
-            </a>
+            <ProjectCard project={project} key={project.title} />
           ))}
         </div>
       </section>
