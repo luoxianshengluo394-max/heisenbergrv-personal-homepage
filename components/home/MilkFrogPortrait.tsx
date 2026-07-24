@@ -13,7 +13,7 @@ export function MilkFrogPortrait() {
           sizes="(max-width: 900px) min(520px, 100vw), 390px"
         />
       </div>
-      <p className="avatarCaption">这是奶蛙 本站的黄色吉祥物</p>
+      <p className="avatarCaption">这是奶蛙</p>
     </div>
   );
 }

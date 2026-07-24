@@ -57,14 +57,8 @@ export default function Home() {
           <h2>嵌入式系统与<br />Edge AI</h2>
         </div>
         <div className="aboutCopy">
-          <p>
-            主要处理 Sensor Data Acquisition Control Logic Communication
-            Links 与 Hardware-Software Integration
-          </p>
-          <p>
-            目前学习和使用 STM32 Real-Time Control Power Electronics TinyML
-            与 Wearable Edge Devices 相关项目整理后公开于 GitHub
-          </p>
+          <p>目前在尝试嵌入式开发与软硬件系统整合</p>
+          <p>主要关注单片机 实时控制 电力电子与边缘 AI</p>
           <div className="focusList">
             <span>MCU Firmware</span>
             <span>Edge AI</span>
