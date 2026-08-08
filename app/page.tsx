@@ -24,7 +24,7 @@ export default function Home() {
             <span className="statusDot" aria-hidden="true" />
             EMBEDDED SYSTEMS&nbsp;&nbsp;EDGE AI
           </p>
-          <h1>你好 我是</h1>
+          <h1>你好</h1>
           <p className="heroLead">
             入门级嵌入式开发者 关注 Edge AI MCU Firmware Power
             Electronics 与 Hardware Systems
