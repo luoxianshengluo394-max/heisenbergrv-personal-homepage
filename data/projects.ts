@@ -55,4 +55,13 @@ export const projects: Project[] = [
     href: "https://github.com/luoxianshengluo394-max/ai-for-social-good-2026-fall-detection",
     featured: true,
   },
+  {
+    index: "06",
+    title: "Dual-Stage AC-AC Converter",
+    subtitle: "2026 SEU Provincial Electronics Design Contest · Second Prize",
+    description:
+      "基于双 STM32G474 的单相有源整流 PFC 与三相 SVPWM 逆变系统 包含固件 硬件资料与可烧录发布镜像",
+    tags: ["STM32", "Power Electronics", "Firmware"],
+    href: "https://github.com/luoxianshengluo394-max/seu-2026-provincial-ac-ac-converter",
+  },
 ];
