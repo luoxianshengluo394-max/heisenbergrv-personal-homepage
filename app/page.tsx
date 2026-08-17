@@ -1,5 +1,5 @@
-import { MilkFrogGallery } from "@/components/home/MilkFrogGallery";
 import { MilkFrogPortrait } from "@/components/home/MilkFrogPortrait";
+import { NaiwaProjectPreview } from "@/components/home/NaiwaProjectPreview";
 import { ProjectCard } from "@/components/home/ProjectCard";
 import { projects } from "@/data/projects";
 
@@ -70,9 +70,9 @@ export default function Home() {
             <p className="sectionLabel">02 奶蛙</p>
             <h2>这是奶蛙</h2>
           </div>
-          <p>わりとかわいい</p>
+          <p>开源 Codex 桌面宠物 · 点击查看动作预览</p>
         </div>
-        <MilkFrogGallery />
+        <NaiwaProjectPreview />
       </section>
 
       <section className="projects shell" id="projects">

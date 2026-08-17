@@ -294,6 +294,303 @@ a {
   transform: scale(1.025);
 }
 
+.naiwaPreview {
+  display: block;
+  overflow: hidden;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 88% 14%, rgba(243, 198, 47, 0.24), transparent 17rem),
+    #3a2b08;
+  color: white;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.naiwaPreview:hover {
+  transform: translateY(-5px);
+  box-shadow: 14px 14px 0 rgba(48, 37, 10, 0.14);
+}
+
+.naiwaPreview:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.naiwaPreviewTop,
+.naiwaPreviewBottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.naiwaPreviewKicker {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.58);
+  font: 600 11px/1.4 "Cascadia Code", "SFMono-Regular", monospace;
+  letter-spacing: 0.12em;
+}
+
+.naiwaPreview h3 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.naiwaPreview h3 span,
+.naiwaHero h1 span {
+  color: var(--accent);
+  font: 600 0.42em/1 "Cascadia Code", "SFMono-Regular", monospace;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.naiwaPreviewArrow {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  place-items: center;
+  color: var(--accent);
+  font-size: 22px;
+  transition: transform 220ms ease, background 220ms ease;
+}
+
+.naiwaPreview:hover .naiwaPreviewArrow {
+  transform: rotate(45deg);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.naiwaPreviewFrames {
+  display: grid;
+  grid-template-columns: 1.35fr repeat(3, 1fr);
+  gap: 10px;
+  margin: 34px 0 22px;
+}
+
+.naiwaPreviewFrame {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 192 / 208;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.08) 25%, transparent 25%) 0 0 / 20px 20px,
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.08) 25%, transparent 25%) 0 0 / 20px 20px,
+    #5b440e;
+}
+
+.naiwaPreviewFrame img {
+  object-fit: contain;
+  padding: 7%;
+  transition: transform 240ms ease;
+}
+
+.naiwaPreview:hover .naiwaPreviewFrame img {
+  transform: scale(1.04);
+}
+
+.naiwaPreviewFrame span {
+  position: absolute;
+  right: 8px;
+  bottom: 7px;
+  color: rgba(255, 255, 255, 0.72);
+  font: 600 10px/1 "Cascadia Code", "SFMono-Regular", monospace;
+}
+
+.naiwaPreviewBottom {
+  align-items: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.naiwaPreviewBottom p {
+  margin: 0;
+}
+
+.naiwaPreviewBottom span {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font: 600 12px/1 "Cascadia Code", "SFMono-Regular", monospace;
+}
+
+.naiwaPage {
+  min-height: 100vh;
+}
+
+.naiwaHero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+  align-items: center;
+  gap: 80px;
+  min-height: 610px;
+  padding: 96px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.naiwaHero h1 {
+  margin: 0;
+  font-size: clamp(58px, 8vw, 108px);
+  line-height: 0.93;
+  letter-spacing: -0.075em;
+}
+
+.naiwaHeroCopy > p:not(.sectionLabel) {
+  max-width: 620px;
+  margin: 34px 0 0;
+  color: #5f5125;
+  font-size: clamp(17px, 1.7vw, 21px);
+  line-height: 1.8;
+}
+
+.naiwaHeroAnimation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.naiwaHeroAnimationFrame {
+  position: relative;
+  width: min(100%, 420px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background:
+    linear-gradient(45deg, rgba(129, 102, 17, 0.11) 25%, transparent 25%) 0 0 / 24px 24px,
+    linear-gradient(-45deg, rgba(129, 102, 17, 0.11) 25%, transparent 25%) 0 0 / 24px 24px,
+    var(--accent-soft);
+  box-shadow: 18px 18px 0 rgba(18, 20, 18, 0.08);
+}
+
+.naiwaHeroAnimationFrame img {
+  object-fit: contain;
+  padding: 10%;
+}
+
+.naiwaHeroAnimation > p {
+  margin: 0;
+  color: var(--muted);
+  font: 550 11px/1.4 "Cascadia Code", "SFMono-Regular", monospace;
+  letter-spacing: 0.08em;
+}
+
+.naiwaAnimations {
+  padding: 128px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.naiwaAnimationsHeading,
+.naiwaRepository {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 92px;
+  align-items: end;
+  margin-bottom: 54px;
+}
+
+.naiwaAnimationsHeading h2,
+.naiwaRepository h2 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  font-weight: 620;
+}
+
+.naiwaAnimationsHeading > p,
+.naiwaRepository > div > p {
+  max-width: 480px;
+  margin: 0;
+  color: #5f5125;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.naiwaAnimationGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.naiwaAnimationCard {
+  min-width: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.naiwaAnimationVisual {
+  position: relative;
+  aspect-ratio: 1 / 0.92;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(45deg, rgba(129, 102, 17, 0.08) 25%, transparent 25%) 0 0 / 20px 20px,
+    linear-gradient(-45deg, rgba(129, 102, 17, 0.08) 25%, transparent 25%) 0 0 / 20px 20px,
+    rgba(255, 233, 154, 0.34);
+}
+
+.naiwaAnimationVisual img {
+  object-fit: contain;
+  padding: 8%;
+  transition: transform 220ms ease;
+}
+
+.naiwaAnimationCard:hover .naiwaAnimationVisual img {
+  transform: scale(1.06);
+}
+
+.naiwaAnimationCopy {
+  min-height: 156px;
+  padding: 22px;
+}
+
+.naiwaAnimationCopy > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.naiwaAnimationCopy h3 {
+  margin: 0;
+  font-size: 23px;
+  letter-spacing: -0.04em;
+}
+
+.naiwaAnimationCopy span {
+  color: var(--muted);
+  font: 550 10px/1.3 "Cascadia Code", "SFMono-Regular", monospace;
+  text-align: right;
+}
+
+.naiwaAnimationCopy p {
+  margin: 12px 0 0;
+  color: #5f5125;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.naiwaRepository {
+  align-items: start;
+  margin: 0 auto;
+  padding: 128px 0;
+}
+
+.naiwaRepository > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
 .projects {
   padding: 128px 0;
 }
@@ -497,6 +794,28 @@ a {
     grid-column: 1 / 3;
   }
 
+  .naiwaHero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 88px 0;
+    gap: 54px;
+  }
+
+  .naiwaHeroAnimation {
+    width: min(520px, 100%);
+    margin: 0 auto;
+  }
+
+  .naiwaAnimationsHeading,
+  .naiwaRepository {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .naiwaAnimationGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .projectGrid {
     grid-template-columns: 1fr;
   }
@@ -554,6 +873,50 @@ a {
   .frogTile {
     height: 280px;
     flex: 0 0 auto;
+  }
+
+  .naiwaPreview {
+    padding: 20px;
+  }
+
+  .naiwaPreviewTop {
+    gap: 18px;
+  }
+
+  .naiwaPreviewFrames {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 26px 0 18px;
+  }
+
+  .naiwaPreviewBottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .naiwaHero {
+    padding: 72px 0;
+  }
+
+  .naiwaHero h1 {
+    font-size: clamp(52px, 16vw, 76px);
+  }
+
+  .naiwaAnimations {
+    padding: 88px 0;
+  }
+
+  .naiwaAnimationGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .naiwaAnimationCopy {
+    min-height: 0;
+  }
+
+  .naiwaRepository {
+    padding: 88px 0;
   }
 
   .sectionHeading {
